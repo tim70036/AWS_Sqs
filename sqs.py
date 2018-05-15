@@ -1,8 +1,8 @@
 import boto3
 import time
 # create a boto3 client
-sqs = boto3.client('sqs')
-sns = boto3.client('sns')
+sqs = boto3.client('sqs', region_name='us-east-1')
+sns = boto3.client('sns', region_name='us-east-1')
 
 QUrl = 'https://sqs.us-east-1.amazonaws.com/956983767321/Lambda'
 TopicArn = 'arn:aws:sns:us-east-1:956983767321:LazyShout'
